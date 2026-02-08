@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
@@ -7,7 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 
 function App() {
-  const [accentColor] = useState('#00df9a'); 
+  const accentColor = '#00df9a'; 
 
   return (
     <div>
