@@ -17,28 +17,28 @@ const Skills = ({ accentColor }) => {
   ];
 
   return (
-    <div name='skills' className='w-full min-h-screen bg-[#1E90FF] text-white px-4 py-16'>
+    <div name='skills' className='w-full min-h-screen bg-[#1E90FF] text-white px-4 sm:px-6 py-16 sm:py-20'>
       <div className='max-w-[1000px] mx-auto'>
-        <div className='text-center pb-12'>
-          <p className='text-2xl md:text-4xl font-bold inline border-b-4' style={{ borderColor: accentColor }}>Skills</p>
-          <p className='py-6 text-base md:text-lg'>These are the technologies I've worked with</p>
+        <div className='text-center pb-8 sm:pb-12'>
+          <p className='text-2xl sm:text-3xl md:text-4xl font-bold inline border-b-4' style={{ borderColor: accentColor }}>Skills</p>
+          <p className='py-4 sm:py-6 text-sm sm:text-base md:text-lg'>These are the technologies I've worked with</p>
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6'>
           {skills.map((skill) => (
-            <div key={skill.name} className='shadow-md shadow-[#040c16] hover:scale-105 duration-300 bg-[#112240] p-3 md:p-4 rounded-lg'>
-              <img className='w-16 md:w-20 mx-auto mb-3 md:mb-4' src={skill.icon} alt={`${skill.name} icon`} />
-              <p className='mb-2 font-semibold text-center text-sm md:text-base'>{skill.name}</p>
-              <div className='w-full bg-gray-700 rounded-full h-2 mb-2'>
+            <div key={skill.name} className='shadow-md shadow-[#040c16] hover:scale-105 duration-300 bg-[#112240] p-3 sm:p-4 rounded-lg transition-all'>
+              <img className='w-12 sm:w-16 md:w-20 mx-auto mb-2 sm:mb-3 md:mb-4' src={skill.icon} alt={`${skill.name} icon`} />
+              <p className='mb-2 font-semibold text-center text-xs sm:text-sm md:text-base'>{skill.name}</p>
+              <div className='w-full bg-gray-700 rounded-full h-1.5 sm:h-2 mb-2'>
                 <div 
-                  className='h-2 rounded-full'
+                  className='h-1.5 sm:h-2 rounded-full transition-all duration-500'
                   style={{ 
                     width: `${skill.percentage}%`, 
                     backgroundColor: accentColor
                   }}
                 ></div>
               </div>
-              <p className='text-xs md:text-sm font-bold text-center' style={{ color: accentColor }}>
+              <p className='text-xs font-bold text-center' style={{ color: accentColor }}>
                 {skill.percentage}%
               </p>
             </div>

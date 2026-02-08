@@ -2,22 +2,22 @@ import React from 'react';
 
 const About = ({ accentColor }) => {
   return (
-    <div name='about' className='w-full min-h-screen bg-[#1E90FF] text-white px-4 py-16'>
+    <div name='about' className='w-full min-h-screen bg-[#1E90FF] text-white px-4 sm:px-6 py-16 sm:py-20'>
       <div className='max-w-[1000px] mx-auto'>
-        <div className='text-center pb-12'>
-          <p className='text-3xl sm:text-4xl font-bold inline border-b-4 text-white' style={{ borderColor: accentColor }}>
+        <div className='text-center pb-8 sm:pb-12'>
+          <p className='text-2xl sm:text-3xl md:text-4xl font-bold inline border-b-4 text-white' style={{ borderColor: accentColor }}>
             About
           </p>
         </div>
         
-        <div className='space-y-8'>
+        <div className='space-y-6 sm:space-y-8'>
           <div className='text-center'>
-            <p className='text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-relaxed'>
+            <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white leading-relaxed'>
               Hi. I'm Yohanes, a passionate Computer Science student. Welcome to my journey!
             </p>
           </div>
           <div className='text-center max-w-4xl mx-auto'>
-            <p className='text-base sm:text-lg leading-relaxed text-white'>
+            <p className='text-sm sm:text-base md:text-lg leading-relaxed text-white'>
               I'm currently a 3rd year Computer Science student with a deep passion for creating 
               innovative software solutions. Through my academic journey and hands-on projects, I've 
               developed skills in full-stack development, building everything from dormitory management 
